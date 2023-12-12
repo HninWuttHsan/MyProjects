@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(#0fb8de, #1e1f1a);
+  background-image: url('assets/backgroundimage.jpg');
+  color: #e1eeeb;
+  min-height: 100vh;
+}
+
+#header {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+
+#header img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+#header h1 {
+  font-size: 1.5rem;
+}
+
+#user-input {
+  padding: 1rem;
+  max-width: 30rem;
+  margin: 2rem auto;
+  border-radius: 4px;
+  background: linear-gradient(180deg, hwb(189 8% 16%), hsl(41, 56%, 38%));
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+
+#user-input label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#user-input input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid hwb(67 4% 7%);
+  border-radius: 0.25rem;
+  background-color: transparent;
+  color: #c2e9e0;
+  font-size: 1rem;
+}
+
+#result {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: linear-gradient(180deg, rgb(245, 250, 251), #e9f5d2);
+}
+
+#result table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+#result th, #result td {
+  padding: 1rem;
+  text-align: right;
+  border: 0.05px solid hsl(57, 46%, 42%);
+}
+
+#result th {
+  background: linear-gradient(180deg, rgb(244, 60, 9), #e9789e, rgb(5, 78, 224));
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 0.8rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#result thead {
+  font-size: 0.8rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+  background: linear-gradient(180deg, rgb(244, 60, 9), #e9789e, rgb(5, 78, 224));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+#result tbody {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.85rem;
+  color: hsl(166, 84%, 26%);
+}
+
+.center {
+  text-align: center;
+}
+.colorful-text {
+  background: linear-gradient(to right, #ff8c00, hsl(237, 100%, 59%)); /* Add your desired colors here */
+  background-clip: text;
+  color: transparent;
+}
